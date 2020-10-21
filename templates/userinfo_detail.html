@@ -1,0 +1,21 @@
+{% block content %}
+
+    <ul>
+
+            <li>{{ object.first_name }} {{ object.last_name }}</li>
+
+              <li>  {{ object.email_add }}</li>
+              <li>  {{ object.position }}</li>
+               <li> {{ object.education }}</li>
+              <li>  {{ object.work_exp }}</li>
+              <li>  <a href = "{{ object.resume }}" >Resume</a></li>
+              <li>  <video width="320" height="240" controls>
+                       {{ object.video_resume }}
+
+</video></li>
+
+            </li>>
+
+
+    </ul>
+{% endblock %}

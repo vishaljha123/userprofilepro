@@ -1,0 +1,18 @@
+{% block content %}
+    <h2>Candidates</h2>
+    <ul>
+        {% for object  in object_list %}
+        <li>{{ object.name }}  </li>
+        <li>{{ object.email_add }}</li>
+
+
+               <img src="{{ MEDIA_URL}} {{object.url}}" class="card-img-top" />
+
+
+
+
+
+
+        {% endfor %}
+    </ul>
+{% endblock %}
